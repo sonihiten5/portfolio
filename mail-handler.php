@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
     $to='sonihiten5@gmail.com';
     $headers="From: ".$email;
     $message="Name: ".$name. "\n\n". "Email:".$email." \n\n". "subject:".$subject."\n\n". "message:".$message;
-  if( mail($to,$subject,$message,$headers))
+  if(mail($to,$subject,$message,$headers))
   {
       echo .$name."we will contact you soon";
   }
