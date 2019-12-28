@@ -6,8 +6,8 @@ if(isset($_POST['submit']))
     $subject = $_POST('subject');
     $message = $_POST('message');
     $to = "sonihiten5@gmail.com";
-    $headers = "From: $name<$email>";
-    $message = "Name: $name \n\n Email:$email \n\n subject:$subject\n\n message:$message\n\n";
+    $headers = "From: ".$email;
+    $message = "Name: ".$name. "\n\n". "Email:".$email." \n\n". "subject:".$subject."\n\n". "message:".$message."\n\n";
    mail($to,$subject,$message,$headers)
  
 }
